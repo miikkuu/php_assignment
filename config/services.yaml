@@ -1,0 +1,6 @@
+services:
+    App\Service\DatabaseService:
+        arguments:
+            $dbUser: '%env(DB_USER)%'
+            $dbPassword: '%env(DB_PASSWORD)%'
+            $dbName: '%env(DB_NAME)%'
